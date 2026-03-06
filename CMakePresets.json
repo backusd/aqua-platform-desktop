@@ -1,0 +1,26 @@
+{
+	"version": 6,
+	"cmakeMinimumRequired": {
+		"major": 3,
+		"minor": 24,
+		"patch": 0
+	},
+	"configurePresets": [
+		{
+			"name": "default",
+			"displayName": "Default",
+			"binaryDir": "${sourceDir}/build",
+			"cacheVariables": {
+				"CMAKE_CXX_STANDARD": "23",
+				"AQUA_RUNTIME_DIR": "${sourceDir}/../aqua-runtime"
+			}
+		}
+	],
+	"buildPresets": [
+		{
+			"name": "default",
+			"configurePreset": "default",
+			"configuration": "Debug"
+		}
+	]
+}
