@@ -58,10 +58,12 @@ add_subdirectory(../aqua-platform-desktop)
 target_link_libraries(your_app PRIVATE aqua_platform_desktop)
 ```
 
+If you vendored `aqua-runtime` as a submodule at `external/aqua-runtime`, no extra configuration is required.
+
 If your `aqua-runtime` checkout is elsewhere, configure with:
 
 ```sh
-cmake -S . -B build -DAQUA_RUNTIME_DIR=C:/dev/aqua-runtime
+cmake -S . -B build -DAQUA_RUNTIME_DIR=C:/path/to/aqua-runtime
 cmake --build build --config Debug
 ```
 
