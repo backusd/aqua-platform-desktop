@@ -1,0 +1,3 @@
+[submodule "external/aqua-runtime"]
+	path = external/aqua-runtime
+	url = https://github.com/backusd/aqua-runtime.git
